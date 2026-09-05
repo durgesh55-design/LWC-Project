@@ -1,0 +1,21 @@
+<template>
+   <lightning-card title="Conditions">
+       <lightning-button label="Show Image" variant="brand" onclick={showToastEventFunction}></lightning-button>
+       <br>
+       <br>
+       <lightning-button label="Hide Image" variant="destructive" onclick={hideImage}></lightning-button>
+       <template if:true={isShow}>
+           <img src={img1} alt="HTML Image">
+       </template>
+       <template if:false={isShow}>
+           <p>The Image is Hidden</p>
+       </template>
+      
+
+
+   </lightning-card>
+  
+</template>
+
+
+
