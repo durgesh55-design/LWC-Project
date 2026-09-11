@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Week Leads">
+        <template for:each={leadList.data} for:item="ld">
+            <div key={ld.id} class="slds-m-left_xx-small">
+                <p>Name : {ld.Name}</p>
+                <p>Company : {ld.Company}</p>
+                <p>Status : {ld.Status}</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>

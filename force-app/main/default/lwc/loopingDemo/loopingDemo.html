@@ -1,10 +1,9 @@
 <template>
-    //for:each is used to loop through the data and display the case details in a card format. The key attribute is used to uniquely identify each case in the loop.
 
     <lightning-card title="Case Details">
         <template for:each={getCases.data} for:item ="ca">
-            <div key={ca.id}>
-                <p>Case Number: {ca.CaseNumber}</p>
+            <div key={ca.id} class="slds-m-left_xx-small">
+                <p class = "p1">Case Number: {ca.CaseNumber}</p>
                 <p>Case Subject: {ca.Subject}</p>
                 <p>Case Status: {ca.Status}</p>
                 <p>Case Priority : {ca.Priority}</p>
